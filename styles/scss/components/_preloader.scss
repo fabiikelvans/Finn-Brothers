@@ -1,0 +1,58 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  PRELOADER
+/*----------------------------------------*/
+
+.preloader {
+	background: var(--tp-theme-1);
+	color: var(--tp-common-white);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 99;
+}
+
+.prl-logo {
+	z-index: 2;
+}
+
+/* Sliders  */
+.lightCyan-slider,
+.persianGreen-slider,
+.white-slider {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: translateX(-100%);
+}
+.lightCyan-slider {
+	background: #f2e6d5;
+}
+
+.persianGreen-slider {
+	background:  var(--tp-common-orange);
+}
+
+.white-slider {
+	background: var(--tp-theme-1);
+}
+
+.hide {
+	opacity: 0;
+	color:  var(--tp-common-orange);
+	font-family: var(--tp-ff-script);
+	font-weight: lighter;
+	font-size: 8vw;
+
+	sup{
+		font-size: 4vw;
+	}
+}

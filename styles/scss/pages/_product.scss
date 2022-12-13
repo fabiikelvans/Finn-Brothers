@@ -1,0 +1,143 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*   PRODUCT
+/*----------------------------------------*/
+.product{
+  position: relative;
+  &__wisdom,&__barley, &__water, &__stills, &__casks, &__nature{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120vh;
+  }
+
+  .overlay{
+    height: 100%;
+    width: 100%;
+    background: rgba(6, 13, 29, 0.75);
+    padding: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .product-content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      row-gap: 2rem;
+    }
+
+    .image-wrapper{
+      position: relative;
+      height: 10rem;
+      width: 10rem;
+      .image{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+
+    h1 {
+      font-family: var(--tp-ff-heading);
+      font-size: 2.2rem;
+      font-weight: 200;
+      color: var(--tp-common-white);
+      @media #{$sm, $xs}{
+        font-size: 1.85rem;
+      }
+      span{
+        font-family: var(--tp-ff-outline);
+        font-weight: 500;
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: var(--tp-common-orange);
+        @media #{$sm, $xs}{
+          font-size: 1.65rem;
+        }
+      }
+    }
+
+  }
+
+
+
+  &__wisdom{
+    background-image: url("https://images.unsplash.com/photo-1625264412785-7c94942908a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1033&q=80");
+    .product-content{
+      margin-right: 60%;
+    }
+  }
+
+  &__barley{
+    background-image: url("https://images.unsplash.com/photo-1529858031473-ea4f22c91fa2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1159&q=80");
+    .product-content{
+      margin-left: 60%;
+    }
+  }
+
+  &__water{
+    background-image: url("https://images.unsplash.com/photo-1488188840666-e2308741a62f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80");
+    .product-content{
+      margin-left: 60%;
+    }
+  }
+
+  &__stills{
+    background-image: url("https://images.unsplash.com/photo-1626688425252-8480b8ec48d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    .product-content{
+      margin-left: 60%;
+    }
+  }
+
+  &__casks{
+    background-image: url("https://images.unsplash.com/photo-1608989407866-ffde5f160272?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    .product-content{
+      margin-left: 60%;
+    }
+  }
+
+  &__nature{
+    background-image: url("https://images.unsplash.com/photo-1594386329813-aa717acbba7c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    .product-content{
+      margin-left: 60%;
+    }
+  }
+
+
+
+  // PRODUCT BUTTON
+  &__button{
+
+  }
+
+
+  // PRODUCT IMAGES
+  &__images{
+
+    display: flex;
+    justify-content: space-between;
+    padding:  18%;
+    @media #{$sm, $xs}{
+      padding:  5%;
+    }
+
+    .image-wrapper{
+      position: relative;
+      height: 38vw;
+      width: 18vw;
+      @media #{$sm, $xs}{
+        height: 48vw;
+        width: 28vw;
+      }
+      .image{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+      }
+    }
+  }
+}

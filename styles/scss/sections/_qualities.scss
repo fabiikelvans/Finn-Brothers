@@ -1,0 +1,34 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*   QUALITIES
+/*----------------------------------------*/
+
+.qualities{
+  padding: 6rem 8%;
+  @media #{$sm, $xs}{
+    padding: 4rem 8%;
+  }
+  h5{
+    font-family: var(--tp-ff-script);
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  h1{
+    font-size: 5vw;
+    margin-top: 1rem;
+    @media #{$sm, $xs}{
+      font-size: 8vw;
+    }
+  }
+
+  p{
+    font-size: 1.2rem;
+    width: 60%;
+    margin-top: 2rem;
+    @media #{$sm, $xs}{
+      width: 100%;
+    }
+  }
+}

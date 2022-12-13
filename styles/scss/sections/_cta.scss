@@ -1,0 +1,52 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  CTA
+/*----------------------------------------*/
+
+.cta{
+  margin: 8rem 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &__title{
+    h1{
+      font-family: var(--tp-ff-heading);
+      font-size: 6vw;
+      padding: 0 12%;
+      -webkit-text-stroke: 1px var(--tp-common-white);
+      color: transparent;
+      letter-spacing: 1px;
+      opacity: 0.85;
+
+      @media #{$sm, $xs}{
+        font-size: 9vw;
+      }
+    }
+  }
+
+  &__button{
+    margin-top: 2rem;
+    button{
+      font-family: var(--tp-ff-script);
+      font-size: 3vw;
+      font-weight: 500;
+      border: 1px solid var(--tp-common-white);
+      border-radius: 12px;
+      padding: 1rem 2.5rem;
+      color: var(--tp-common-white);
+      letter-spacing: 1px;
+      @media #{$sm, $xs}{
+        font-size: 6vw;
+        font-weight: 600;
+      }
+      &:hover{
+        background: var(--tp-common-orange);
+      }
+    }
+  }
+}

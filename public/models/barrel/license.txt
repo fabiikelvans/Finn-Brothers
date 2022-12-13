@@ -1,0 +1,11 @@
+Model Information:
+* title:	Wine Barrel - Module XB1101
+* source:	https://sketchfab.com/3d-models/wine-barrel-module-xb1101-8ad6438fd2514577a3add6a40a79ae7f
+* author:	KainHunter1997 (https://sketchfab.com/KainHunterDesign)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Wine Barrel - Module XB1101" (https://sketchfab.com/3d-models/wine-barrel-module-xb1101-8ad6438fd2514577a3add6a40a79ae7f) by KainHunter1997 (https://sketchfab.com/KainHunterDesign) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

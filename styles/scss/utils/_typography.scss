@@ -1,0 +1,48 @@
+
+// font url
+
+$font-url: 'https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Kumar+One+Outline&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Redressed&family=Waterfall&display=swap';
+
+// font family
+$font-family: (
+    ff: (
+        body: "'Nunito', sans-serif",
+        heading: "'Cinzel Decorative', cursive",
+            outline: "'Kumar One Outline', cursive",
+            script: "'Waterfall', cursive"
+    )
+);
+
+// font weight
+$font-scale: (
+    fw: (
+        normal: normal,
+        elight: 200,
+        light: 300,
+        regular: 400,
+        medium: 500,
+        sbold: 600,
+        bold: 700,
+        ebold: 800,
+        black: 900,
+    )
+);
+
+
+
+// font size
+$font-size: (
+    
+    fz: (
+        body: 14px,
+        p: 14px,
+        h1: 40px,
+        h2: 36px,
+        h3: 24px,
+        h4: 20px,
+        h5: 16px,
+        h6: 14px,
+    )
+);
+
+

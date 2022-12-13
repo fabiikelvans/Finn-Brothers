@@ -1,0 +1,131 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*   FEATURED
+/*----------------------------------------*/
+.featured{
+  padding: 6rem 0;
+  position: relative;
+  background: var(--tp-theme-1);
+  &__header{
+    padding: 0 8%;
+
+    text-align: center;
+    h1{
+      font-size: 12vw;
+      -webkit-text-stroke: 1px var(--tp-common-white);
+      color: transparent;
+      z-index: -1;
+      opacity: 0.45;
+      letter-spacing: 1px;
+    }
+  }
+
+  &__arrows{
+    font-size: 3rem;
+    color: var(--tp-common-orange);
+    &-prev{
+      position: absolute;
+      left: 20px;
+      top: 60%;
+      cursor: pointer;
+      transform: rotate(145deg);
+      @media #{$sm, $xs}{
+        left: 10px;
+      }
+      @include transition(.25s);
+      &:hover{
+        color: var(--tp-common-white);
+      }
+      @media #{$sm, $xs}{
+
+      }
+    }
+    &-next{
+      cursor: pointer;
+      position: absolute;
+      top: 60%;
+      right: 20px;
+      transform: rotate(-35deg);
+      @media #{$sm, $xs}{
+        right: 10px;
+      }
+      @include transition(.25s);
+      &:hover{
+        color: var(--tp-common-white);
+      }
+      @media #{$sm, $xs}{
+      }
+    }
+  }
+
+  &__wrapper{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding: 0 8%;
+
+  }
+  &__item{
+    position: relative;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 1.5rem;
+    @media #{$sm, $xs}{
+      margin-left: 20%;
+    }
+
+    @include transition(.45s);
+    &:hover{
+      h1{
+        opacity: 1;
+        color: var(--tp-common-orange);
+        mix-blend-mode: normal;
+      }
+      .image{
+        opacity: 0.85;
+      }
+    }
+
+    &-content{
+
+
+      h1{
+        font-size: 5vw;
+        -webkit-text-stroke: 1px var(--tp-common-white);
+        color: transparent;
+        opacity: 0.25;
+        position: absolute;
+        left: 0;
+        mix-blend-mode: difference;
+        @media #{$sm, $xs}{
+          font-size: 14vw;
+        }
+
+      }
+      p{
+        display: none;
+      }
+    }
+
+    &-image{
+      .image-wrapper{
+        position: relative;
+        height: 38vw;
+        width: 18vw;
+        @media #{$sm, $xs}{
+          height: 88vw;
+          width: 38vw;
+        }
+        .image{
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+          border-radius: 100px;
+        }
+      }
+    }
+  }
+}

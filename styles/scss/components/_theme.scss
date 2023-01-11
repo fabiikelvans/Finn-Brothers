@@ -43,7 +43,7 @@ body {
 	font-size: var(--tp-fz-body);
 	font-weight: normal;
 	background: var(--tp-theme-1);
-	color: var(--tp-text-body);
+	color: #e1e1e1;
 	line-height: 26px;
 }
 @-moz-document url-prefix() {
@@ -100,9 +100,8 @@ ul {
 
 p {
 	font-family: var(--tp-ff-p);
-	font-size: var(--tp-fz-p);
-	font-weight: var(--tp-fw-normal);
-	color: var(--tp-text-body);
+	font-size: 0.75em;
+	font-weight: var(--tp-fw-light);
 	margin-bottom: 15px;
 	line-height: 26px;
 }
@@ -192,18 +191,18 @@ ul{
 }
 
 *::-moz-selection {
-	background: var(--tp-common-black);
-	color: var(--tp-common-white);
+	background: var(--tp-common-white);
+	color: var(--tp-common-black);
 	text-shadow: none;
 }
 ::-moz-selection {
-	background: var(--tp-common-black);
-	color: var(--tp-common-white);
+	background: var(--tp-common-white);
+	color: var(--tp-common-black);
 	text-shadow: none;
 }
 ::selection {
-	background: var(--tp-common-black);
-	color: var(--tp-common-white);
+	background: var(--tp-common-white);
+	color: var(--tp-common-black);
 	text-shadow: none;
 }
 

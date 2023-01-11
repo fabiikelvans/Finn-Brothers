@@ -14,7 +14,6 @@ import Barrel from "../components/Canvas/Barrel/Barrel";
 
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import Audio from "../components/Audio/Audio";
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -39,7 +38,6 @@ export default function Home() {
 
         {/*<Preloader/>*/}
       <Layout>
-          <Audio/>
           <main >
               <div className="canvas3D">
                   <Barrel mainRef={main} />
